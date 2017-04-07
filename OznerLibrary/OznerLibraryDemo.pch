@@ -1,0 +1,22 @@
+//
+//  OznerLibraryDemo.pch
+//  OznerLibraryDemo
+//
+//  Created by zhuguangyang on 2017/4/7.
+//  Copyright © 2017年 Ozner. All rights reserved.
+//
+
+#ifndef OznerLibraryDemo_pch
+#define OznerLibraryDemo_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#if DEBUG
+#define NSLog(fmt, ...) fprintf(stderr,"文件名:%s [函数名:%s]\nline:%d content:%s\n",  __FILE__,__FUNCTION__,__LINE__, [[NSString stringWithFormat:fmt, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(fmt, ...) nil
+#endif
+
+
+#endif /* OznerLibraryDemo_pch */
