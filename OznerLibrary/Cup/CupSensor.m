@@ -72,6 +72,7 @@ typedef struct _Sensor
 }
 -(NSString*) getValue:(int)value
 {
+    NSLog(@"%d",value);
     //传感器错误值
     if (value==CUP_SENSOR_ERROR) return @"-";
     else
