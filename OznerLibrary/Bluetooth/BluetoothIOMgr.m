@@ -135,6 +135,7 @@
         
     }
     NSLog(@"found:%@",peripheral.name);
+    //首次连接杯子
     if (scanData==nil)
     {
         if ([advertisementData objectForKey:CBAdvertisementDataManufacturerDataKey])
@@ -151,7 +152,7 @@
     if (scanData)
     {
         NSString* identifier=[self getIdentifier:peripheral];
-        //杯子重连问题
+        //杯子重连问题(杯子无需拼接此字段)
         if (![name isEqualToString:@"Ozner Cup"]){
 
         if ([advertisementData objectForKey:CBAdvertisementDataManufacturerDataKey])
