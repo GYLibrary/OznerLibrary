@@ -25,6 +25,7 @@
 
 -(instancetype)initWithPeripheral:(CBPeripheral*)Peripheral Address:(NSString*)address
                    CentralManager:(CBCentralManager *)CentralManager BluetoothData:(ScanData *)scanData;
+//生产日期
 @property (nonnull,strong,readonly) NSDate* firmwareVersion;
 @property (nonnull,copy,readonly) NSString* Platform;
 @property (nonatomic,readonly) int scanResponseType;

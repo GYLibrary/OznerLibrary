@@ -166,7 +166,7 @@
             NSLog(@"Recv Sensor");
             NSLog(@"%s",bytes);//ÇC02May202015094626
             [self->_sensor load:bytes+1];
-            NSLog(@"Sensor TDS:%d Battery:%d",_sensor.TDS,_sensor.Battery);
+            NSLog(@"Sensor TDS:%d Battery:%d Weight:%d",_sensor.TDS,_sensor.Battery,_sensor.Weight);
             [self doSensorUpdate];
             break;
         }

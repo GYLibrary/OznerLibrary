@@ -16,6 +16,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+
     
     [self->_tableView registerNib:[UINib nibWithNibName:@"WaterPurifier_TableViewCell" bundle:nil] forCellReuseIdentifier:NSStringFromClass([WaterPurifier class])];
     
