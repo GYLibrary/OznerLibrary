@@ -104,6 +104,7 @@
  */
 -(BOOL)checkisBindMode:(BaseDeviceIO*)io;
 
+-(void)closeAll;
 
 +(instancetype)instance;
 @property (strong,readonly) IOManagerList* ioManager;

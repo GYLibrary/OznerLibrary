@@ -112,6 +112,8 @@
 		02E98C0A1C1BB84600ED06F1 /* CupDBRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E98C091C1BB84600ED06F1 /* CupDBRecord.m */; };
 		02E98C221C1E566200ED06F1 /* WifiAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E98C211C1E566200ED06F1 /* WifiAddViewController.m */; };
 		02FBC0A91CA0DD6000C6DB5E /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FBC0A81CA0DD5F00C6DB5E /* libxml2.tbd */; };
+		6857FFDB1EC3FD2B002B5DCA /* Thermos.m in Sources */ = {isa = PBXBuildFile; fileRef = 6857FFDA1EC3FD2B002B5DCA /* Thermos.m */; };
+		6857FFDE1EC3FF27002B5DCA /* ThermosSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6857FFDD1EC3FF27002B5DCA /* ThermosSensor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -318,6 +320,10 @@
 		02E98C201C1E566200ED06F1 /* WifiAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiAddViewController.h; sourceTree = "<group>"; };
 		02E98C211C1E566200ED06F1 /* WifiAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiAddViewController.m; sourceTree = "<group>"; };
 		02FBC0A81CA0DD5F00C6DB5E /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		6857FFD91EC3FD2B002B5DCA /* Thermos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thermos.h; sourceTree = "<group>"; };
+		6857FFDA1EC3FD2B002B5DCA /* Thermos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thermos.m; sourceTree = "<group>"; };
+		6857FFDC1EC3FF27002B5DCA /* ThermosSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThermosSensor.h; sourceTree = "<group>"; };
+		6857FFDD1EC3FF27002B5DCA /* ThermosSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThermosSensor.m; sourceTree = "<group>"; };
 		B705F8E81E97841D00EF25B1 /* OznerLibraryDemo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OznerLibraryDemo.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -492,6 +498,7 @@
 				02E98B7C1C18679D00ED06F1 /* Device */,
 				02E98B8F1C18679D00ED06F1 /* Helper */,
 				02E98B971C18679D00ED06F1 /* Tap */,
+				6857FFD81EC3FD0C002B5DCA /* Thermos */,
 				02E98BA81C18679D00ED06F1 /* WaterPurifier */,
 				02E98BB31C18679D00ED06F1 /* Wifi */,
 				B705F8E81E97841D00EF25B1 /* OznerLibraryDemo.pch */,
@@ -712,6 +719,17 @@
 			name = Bluetooth;
 			sourceTree = "<group>";
 		};
+		6857FFD81EC3FD0C002B5DCA /* Thermos */ = {
+			isa = PBXGroup;
+			children = (
+				6857FFD91EC3FD2B002B5DCA /* Thermos.h */,
+				6857FFDA1EC3FD2B002B5DCA /* Thermos.m */,
+				6857FFDC1EC3FF27002B5DCA /* ThermosSensor.h */,
+				6857FFDD1EC3FF27002B5DCA /* ThermosSensor.m */,
+			);
+			path = Thermos;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -848,6 +866,7 @@
 				02E98B2C1C18673000ED06F1 /* AppDelegate.m in Sources */,
 				028727DF1C37B3340013857D /* messages_mosq.c in Sources */,
 				029F93FD1C1FB9E300D73A35 /* BaseTableViewCell.m in Sources */,
+				6857FFDB1EC3FD2B002B5DCA /* Thermos.m in Sources */,
 				0288C6961DBE06ED00B7C306 /* ROWaterPurufier.m in Sources */,
 				02E98BCA1C18679D00ED06F1 /* BluetoothIOMgr.m in Sources */,
 				028727DD1C37B3340013857D /* logging_mosq.c in Sources */,
@@ -882,6 +901,7 @@
 				028727E61C37B3340013857D /* send_mosq.c in Sources */,
 				02E98BD41C18679D00ED06F1 /* CupRecordList.m in Sources */,
 				02E98BF31C18679D00ED06F1 /* ConfigurationDevice.m in Sources */,
+				6857FFDE1EC3FF27002B5DCA /* ThermosSensor.m in Sources */,
 				02E98BC41C18679D00ED06F1 /* AirPurifier_MxChip.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
