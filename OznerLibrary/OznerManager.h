@@ -49,6 +49,7 @@
     BluetoothIOMgr* bluetoothMgr;
     NSString* owner;
     SqlLiteDB* db;
+    //设备管理
     NSArray* deviceMgrList;
 }
 @property (nonatomic, weak) id<OznerManagerDelegate> delegate;

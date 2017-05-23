@@ -140,6 +140,12 @@
     [runThread start];
 }
 
+
+/**
+ 主题
+
+ @param secureCode secureCode description
+ */
 -(void)setSecureCode:(NSString*)secureCode;
 {
     self->inKey=[NSString stringWithFormat:@"%@/%@/in",secureCode,[[self.identifier stringByReplacingOccurrencesOfString:@":" withString:@""] lowercaseString]];

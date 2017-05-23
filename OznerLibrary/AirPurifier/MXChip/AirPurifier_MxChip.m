@@ -100,6 +100,15 @@
     }
     return [io send:[NSData dataWithBytes:bytes length:len]];
 }
+
+
+/**
+ 发送指令
+
+ @param propertyId propertyId description
+ @param value value description
+ @param cb cb description
+ */
 -(void)setProperty:(Byte)propertyId Data:(NSData*)value Callback:(OperateCallback)cb
 {
     if (!io)
@@ -114,6 +123,7 @@
     int len=13 + (int)value.length;
     Byte bytes[len];
     memset(bytes, 0, len);
+    //设置状态指令 空净设备固定标识
     bytes[0] = (Byte) 0xfb;
     *((ushort*)(bytes+1))=(ushort)len;
     
@@ -138,6 +148,13 @@
 {
     [(MXChipIO*)newio setSecureCode:SecureCode];
 }
+
+/**
+ 设备状态返回
+
+ @param io io description
+ @param data 数据
+ */
 -(void)DeviceIO:(BaseDeviceIO *)io recv:(NSData *)data
 {
     _requestCount=0;
@@ -149,6 +166,7 @@
     if (!data) return;
     if (data.length<=0) return;
     BytePtr bytes=(BytePtr)[data bytes];
+    //判断是否是空净传递数据
     if (bytes[0]!=0xFA) return;
     int len=*((ushort*)(bytes+1));
     if (len<0) return;
@@ -156,13 +174,16 @@
     switch (cmd) {
         case CMD_RECV_PROPERTY:
         {
+            //数据状态条数
             Byte count=bytes[12];
             int p=13;
             NSMutableDictionary* set=[[NSMutableDictionary alloc] init];
             for (int i=0;i<count;i++)
             {
+                //状态id
                 int property=bytes[p];
                 p++;
+                //状态数据长度
                 Byte size=bytes[p];
                 p++;
                 NSData* data=[NSData dataWithBytes:bytes+p length:size];

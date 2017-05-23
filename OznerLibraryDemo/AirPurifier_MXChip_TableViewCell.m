@@ -21,6 +21,7 @@
 }
 
 - (IBAction)PowerClick:(id)sender {
+    
     AirPurifier_MxChip* air=(AirPurifier_MxChip*)self.device;
     [self.deviceInfo startSend];
     
