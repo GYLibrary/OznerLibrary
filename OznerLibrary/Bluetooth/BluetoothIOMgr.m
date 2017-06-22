@@ -216,7 +216,7 @@
                 bleScaning=false;
                 scanThread=[[NSThread alloc] initWithTarget:self selector:@selector(scanThreadProc) object:nil];
                 [scanThread start];
-                [scanThread cancel];
+//                [scanThread cancel];
             }
             break;
             

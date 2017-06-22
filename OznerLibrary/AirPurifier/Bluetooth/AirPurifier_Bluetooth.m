@@ -22,6 +22,7 @@
 #define type_sensor  2
 #define type_filter  3
 #define type_a2dp  4
+#define type_SettingTwo 5
 
 -(instancetype)init:(NSString *)identifier Type:(NSString *)type Settings:(NSString *)json
 {
@@ -133,6 +134,9 @@
     Byte byte[1]={type_sensor};
     return [self send:opCode_Request Data:[NSData dataWithBytes:byte length:sizeof(byte)]];
 }
+
+
+
 
 -(BOOL)DeviceIOWellInit:(BaseDeviceIO *)io
 {

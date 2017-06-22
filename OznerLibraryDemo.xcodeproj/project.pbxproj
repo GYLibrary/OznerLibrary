@@ -114,6 +114,9 @@
 		02FBC0A91CA0DD6000C6DB5E /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FBC0A81CA0DD5F00C6DB5E /* libxml2.tbd */; };
 		6857FFDB1EC3FD2B002B5DCA /* Thermos.m in Sources */ = {isa = PBXBuildFile; fileRef = 6857FFDA1EC3FD2B002B5DCA /* Thermos.m */; };
 		6857FFDE1EC3FF27002B5DCA /* ThermosSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6857FFDD1EC3FF27002B5DCA /* ThermosSensor.m */; };
+		68A4D9D51EFB5AE300B0EFB1 /* ROCommlCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A4D9D31EFB5AE300B0EFB1 /* ROCommlCell.m */; };
+		68A4D9D61EFB5AE300B0EFB1 /* ROCommlCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68A4D9D41EFB5AE300B0EFB1 /* ROCommlCell.xib */; };
+		68FC01961EFAA3B1009A78DE /* ROWaterSettingTwoInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FC01951EFAA3B1009A78DE /* ROWaterSettingTwoInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -324,6 +327,11 @@
 		6857FFDA1EC3FD2B002B5DCA /* Thermos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thermos.m; sourceTree = "<group>"; };
 		6857FFDC1EC3FF27002B5DCA /* ThermosSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThermosSensor.h; sourceTree = "<group>"; };
 		6857FFDD1EC3FF27002B5DCA /* ThermosSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThermosSensor.m; sourceTree = "<group>"; };
+		68A4D9D21EFB5AE300B0EFB1 /* ROCommlCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROCommlCell.h; sourceTree = "<group>"; };
+		68A4D9D31EFB5AE300B0EFB1 /* ROCommlCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROCommlCell.m; sourceTree = "<group>"; };
+		68A4D9D41EFB5AE300B0EFB1 /* ROCommlCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ROCommlCell.xib; sourceTree = "<group>"; };
+		68FC01941EFAA3B1009A78DE /* ROWaterSettingTwoInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROWaterSettingTwoInfo.h; sourceTree = "<group>"; };
+		68FC01951EFAA3B1009A78DE /* ROWaterSettingTwoInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROWaterSettingTwoInfo.m; sourceTree = "<group>"; };
 		B705F8E81E97841D00EF25B1 /* OznerLibraryDemo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OznerLibraryDemo.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -419,6 +427,9 @@
 				02067F861C27F797009A05D4 /* WaterReplenishmentMeter_TableViewCell.h */,
 				02067F871C27F797009A05D4 /* WaterReplenishmentMeter_TableViewCell.m */,
 				02067F881C27F797009A05D4 /* WaterReplenishmentMeter_TableViewCell.xib */,
+				68A4D9D21EFB5AE300B0EFB1 /* ROCommlCell.h */,
+				68A4D9D31EFB5AE300B0EFB1 /* ROCommlCell.m */,
+				68A4D9D41EFB5AE300B0EFB1 /* ROCommlCell.xib */,
 			);
 			name = DeviceCells;
 			sourceTree = "<group>";
@@ -655,6 +666,8 @@
 				02E98BB21C18679D00ED06F1 /* WaterPurifierStatus.m */,
 				0288C6941DBE06ED00B7C306 /* ROWaterPurufier.h */,
 				0288C6951DBE06ED00B7C306 /* ROWaterPurufier.m */,
+				68FC01941EFAA3B1009A78DE /* ROWaterSettingTwoInfo.h */,
+				68FC01951EFAA3B1009A78DE /* ROWaterSettingTwoInfo.m */,
 				02B5628B1DBF33920035BAC0 /* ROWaterSettingInfo.h */,
 				02B5628C1DBF33920035BAC0 /* ROWaterSettingInfo.m */,
 				02B5628E1DBF35330035BAC0 /* RO_WaterInfo.h */,
@@ -793,6 +806,7 @@
 				0286D58B1C23A34000C027B5 /* AirPurifier_Bluetooth_TableViewCell.xib in Resources */,
 				0286D5771C21438C00C027B5 /* DeviceTableViewCell.xib in Resources */,
 				02E98B4E1C18676400ED06F1 /* ic_settings_bluetooth.png in Resources */,
+				68A4D9D61EFB5AE300B0EFB1 /* ROCommlCell.xib in Resources */,
 				02E98B341C18673000ED06F1 /* Assets.xcassets in Resources */,
 				0286D5721C213B3B00C027B5 /* WaterPurifier_TableViewCell.xib in Resources */,
 				0286D56D1C21350700C027B5 /* AirPurifier_MXChip_TableViewCell.xib in Resources */,
@@ -842,6 +856,7 @@
 				02E98BF11C18679D00ED06F1 /* MXChipIOManager.m in Sources */,
 				02E98BE31C18679D00ED06F1 /* TapFirmware.m in Sources */,
 				02E98BCD1C18679D00ED06F1 /* ScanData.m in Sources */,
+				68A4D9D51EFB5AE300B0EFB1 /* ROCommlCell.m in Sources */,
 				02E98BE21C18679D00ED06F1 /* Tap.m in Sources */,
 				02E98BC51C18679D00ED06F1 /* AirPurifierInfo.m in Sources */,
 				02E98BD91C18679D00ED06F1 /* BaseOznerObject.m in Sources */,
@@ -879,6 +894,7 @@
 				02E98B291C18673000ED06F1 /* main.m in Sources */,
 				028727E51C37B3340013857D /* send_client_mosq.c in Sources */,
 				02E98BE41C18679D00ED06F1 /* TapManager.m in Sources */,
+				68FC01961EFAA3B1009A78DE /* ROWaterSettingTwoInfo.m in Sources */,
 				028727E21C37B3340013857D /* read_handle.c in Sources */,
 				02067F7F1C27E607009A05D4 /* WaterReplenishmentMeterMgr.m in Sources */,
 				02E98BEB1C18679D00ED06F1 /* WaterPurifierInfo.m in Sources */,

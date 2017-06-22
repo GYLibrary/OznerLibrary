@@ -290,6 +290,7 @@
 }
 -(void)close
 {
+//    [runThread ];
     [runThread cancel];
     runThread=NULL;
     NSLog(@"close");

@@ -11,6 +11,7 @@
 #import "WaterPurifier.h"
 #import "AirPurifier_MxChip.h"
 #import "AirPurifier_Bluetooth.h"
+#import "ROCommlCell.h"
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -26,12 +27,16 @@
     
     [self->_tableView registerNib:[UINib nibWithNibName:@"DeviceTableViewCell" bundle:nil] forCellReuseIdentifier:@"DeviceTableViewCell"];
     
+    [self->_tableView registerNib:[UINib nibWithNibName:@"ROCommlCell" bundle:nil] forCellReuseIdentifier:NSStringFromClass([ROCommlCell class])];
+    
  
 }
 -(void)viewDidAppear:(BOOL)animated
 {
     [OznerManager instance].delegate=self;
     [self update];
+//    [[OznerManager instance] closeAll];
+
 }
 -(void)update
 {
@@ -99,6 +104,16 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     OznerDevice* device=[devices objectAtIndex:indexPath.item];
     NSString* name=NSStringFromClass(device.class);
+    
+    if ([device.type isEqualToString:@"RO Comml"]) {
+        name = @"ROCommlCell";
+    }
+//    if ([device.type isEqualToString:@"RO Comml"]) {
+//        ROCommlCell *cell = (ROCommlCell *)[tableView dequeueReusableCellWithIdentifier:NSStringFromClass([ROCommlCell class])];
+//        cell.device = device;
+//        return cell;
+//    }
+    
     BaseTableViewCell *cell = (BaseTableViewCell*)[tableView dequeueReusableCellWithIdentifier:name];
     if (cell==nil)
     {
@@ -123,6 +138,10 @@
     {
         return 370;
     }
+    if ([device.type isEqualToString:@"RO Comml"]) {
+        return 300;
+    }
+//
     return 240;
 }
 
