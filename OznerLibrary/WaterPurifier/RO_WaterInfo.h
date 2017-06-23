@@ -15,6 +15,10 @@
 @property (readonly)  int TDS2_RAW;
 @property (readonly)  int TDS_Temperature;
 @property (readonly)  int FilterVolume;
+
+@property (readonly) int waterml;
+
+
 -(void)load:(NSData*)data;
 -(void)reset;
 @end
