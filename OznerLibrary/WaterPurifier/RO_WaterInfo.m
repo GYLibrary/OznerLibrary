@@ -52,7 +52,7 @@
 }
 -(NSString *)description
 {
-    return [NSString stringWithFormat:@"TDS1:%d(%d) TDS2:%d(%d) 温度:%d 过滤量:%d  制水量:%d"",
+    return [NSString stringWithFormat:@"TDS1:%d(%d) TDS2:%d(%d) 温度:%d 过滤量:%d  制水量:%d",
             _TDS1,_TDS1_RAW,
             _TDS2,_TDS2_RAW,
             _TDS_Temperature,
